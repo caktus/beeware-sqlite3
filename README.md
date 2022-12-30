@@ -39,5 +39,25 @@ briefcase run iOS
 briefcase create android  # only run once?
 briefcase update android
 briefcase build android
-briefcase run android
+```
+
+Android error on MacBook Air (M1, 2020):
+
+```
+briefcase run android -d @beePhone
+
+[hellosql] Starting emulator beePhone...
+Starting emulator...
+INFO    | Android emulator version 31.3.13.0 (build_id 9189900) (CL:N/A)
+emulator: INFO: Found systemPath /Users/copelco/Library/Caches/org.beeware.briefcase/tools/android_sdk/system-images/android-31/default/arm64-v8a/
+PANIC: Avd's CPU Architecture 'arm64' is not supported by the QEMU2 emulator on x86_64 host.
+
+Android emulator was unable to start!
+
+Try starting the emulator manually by running:
+
+    $ /Users/copelco/Library/Caches/org.beeware.briefcase/tools/android_sdk/emulator/emulator @beePhone -dns-server 8.8.8.8
+
+Resolve any problems you discover, then try running your app again. You may
+find this page helpful in diagnosing emulator problems.
 ```
