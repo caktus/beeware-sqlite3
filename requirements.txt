@@ -1,0 +1,3 @@
+briefcase
+black
+toga @ git+https://github.com/beeware/toga@24d5e2247f04be161b433a9d08050286fe1bcf50#egg=toga

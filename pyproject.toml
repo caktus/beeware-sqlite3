@@ -1,0 +1,72 @@
+[tool.briefcase]
+project_name = "Hello SQL"
+bundle = "com.caktusgroup"
+version = "0.0.1"
+url = "https://caktusgroup.com/hellosql"
+license = "BSD license"
+author = 'Jane Developer'
+author_email = "jane@caktusgroup.com"
+
+[tool.briefcase.app.hellosql]
+formal_name = "Hello SQL"
+description = "My first application"
+icon = "src/hellosql/resources/hellosql"
+sources = ['src/hellosql']
+requires = [
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.briefcase.app.hellosql.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev38',
+    'std-nslog~=1.0.0'
+]
+
+[tool.briefcase.app.hellosql.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev38',
+]
+
+[tool.briefcase.app.hellosql.linux.appimage]
+system_requires = [
+    'gir1.2-webkit-3.0',
+    'libcairo2-dev',
+    'libgirepository1.0-dev',
+    'libgtk-3-dev',
+    'libpango1.0-dev',
+    'librsvg2-dev',
+    'libwebkitgtk-3.0-0',
+]
+linuxdeploy_plugins = [
+    'DEPLOY_GTK_VERSION=3 gtk',
+]
+
+[tool.briefcase.app.hellosql.linux.flatpak]
+flatpak_runtime = 'org.gnome.Platform'
+flatpak_runtime_version = '42'
+flatpak_sdk = 'org.gnome.Sdk'
+
+[tool.briefcase.app.hellosql.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev38',
+]
+
+# Mobile deployments
+[tool.briefcase.app.hellosql.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev38',
+    'std-nslog~=1.0.0'
+]
+
+[tool.briefcase.app.hellosql.android]
+requires = [
+    'toga-android>=0.3.0.dev38'
+]
+
+[tool.briefcase.app.hellosql.web]
+requires = [
+    'toga-web>=0.3.0.dev38'
+]
+style_framework = "Bootstrap v4.6"

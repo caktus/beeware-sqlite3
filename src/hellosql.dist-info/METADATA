@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.11
+Name: hellosql
+Formal-Name: Hello SQL
+App-ID: com.caktusgroup.hellosql
+Version: 0.0.1
+Home-page: https://caktusgroup.com/hellosql
+Download-URL: https://caktusgroup.com/hellosql
+Author: Jane Developer
+Author-email: jane@caktusgroup.com
+Summary: My first application
