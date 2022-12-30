@@ -41,7 +41,7 @@ briefcase update android
 briefcase build android
 ```
 
-Android error on MacBook Air (M1, 2020):
+### Android error on MacBook Air (M1, 2020)
 
 ```
 briefcase run android -d @beePhone
@@ -60,4 +60,16 @@ Try starting the emulator manually by running:
 
 Resolve any problems you discover, then try running your app again. You may
 find this page helpful in diagnosing emulator problems.
+```
+
+However I can manually launch another emulator just fine:
+
+```
+~/Library/Android/sdk/emulator/emulator @Pixel_6_API_31 -dns-server 8.8.8.8                                       
+INFO    | Android emulator version 31.3.14.0 (build_id 9322596) (CL:N/A)
+emulator: INFO: Found systemPath /Users/copelco/Library/Android/sdk/system-images/android-31/google_apis/arm64-v8a/
+INFO    | Duplicate loglines will be removed, if you wish to see each indiviudal line launch with the -log-nofilter flag.
+WARNING | unexpected system image feature string, emulator might not function correctly, please try updating the emulator.
+...
+(launches)
 ```
