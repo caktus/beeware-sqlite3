@@ -4,7 +4,7 @@
 [The BeeWare Project](https://beeware.org/). **If you want to see more tools like Briefcase, please
 consider** [becoming a financial member of BeeWare](https://beeware.org/contributing/membership).
 
-Proof of concept [BeeWare](https://beeware.org/) app using [sqlite3](https://docs.python.org/3/library/sqlite3.html) based off of [Beeware Tutotial](https://docs.beeware.org/en/latest/tutorial/tutorial-1.html).
+Proof of concept [BeeWare](https://beeware.org/) app using [sqlite3](https://docs.python.org/3/library/sqlite3.html) based off of the [Beeware Tutotial](https://docs.beeware.org/en/latest/tutorial/tutorial-1.html).
 
 
 ![Mac App](desktop-app.png "Mac App")
